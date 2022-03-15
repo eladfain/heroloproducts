@@ -1,0 +1,21 @@
+.customtable{
+    border-collapse: collapse;
+    margin: auto;
+    position: relative;
+    top:30px
+}
+
+.customtable th{
+    background-color: #d6d6c2;
+    font-weight: normal;
+    text-align: left;
+}
+
+.customtable th,.customtable td{
+    padding: 5px 20px;
+    color: #0f0f0f;
+    text-overflow: ellipsis;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+}

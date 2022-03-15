@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import HeaderNav from "./components/HeaderNav";
 
+import PurchesByItem from './components/PurchesByItem';
+import PurchesByStore from './components/PurchesByStore';
+import {Route,Routes} from 'react-router-dom';
+import UtilContextProvider from './context/UtilContextProvider';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UtilContextProvider>
+      <div className="App">
+        <HeaderNav/>
+        <Routes>
+          <Route path="/" element={<PurchesByItem/>}/> 
+          
+          <Route path='/bystore' element={<PurchesByStore/>}/>
+            
+          
+        </Routes>
+      
+      
+      </div>
+    </UtilContextProvider>
+    
   );
 }
 

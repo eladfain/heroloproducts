@@ -1,0 +1,29 @@
+.header{
+    background-color: #666666;
+    height: 30px;
+}
+.link{
+    padding:5px;
+}
+.link:hover{
+    text-decoration: underline;
+    color: #1f1f14;
+}
+.inactivelink{
+    color: #bfbfbf;
+    text-decoration:none;
+}
+
+.activelink{
+    color: #f2f2f2;
+    text-decoration: underline;
+}
+
+.currency{
+    right: 10px;
+    position: absolute;
+}
+
+.currency select{
+    background-color: transparent;
+}

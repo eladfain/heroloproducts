@@ -1,0 +1,15 @@
+.navtab{
+   background-color: #d6d6c2;
+   max-width: 34rem;
+   margin: auto;
+}
+
+.tab{
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.active{
+    font-weight: bold;
+    text-decoration: underline;
+}

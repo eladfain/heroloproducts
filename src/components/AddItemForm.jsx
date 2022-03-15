@@ -75,6 +75,7 @@ const AddItemForm=(props)=>{
                 </div>
                
             </form>
+            {hasError && <h4>somethig went wrong... try again later</h4>}
         </Modal>
     )
 }
